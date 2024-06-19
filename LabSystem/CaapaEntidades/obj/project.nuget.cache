@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dV5MfW6HUUabVzCEGJ3GmhKLBuQgHHt2onDGeC0WAyoqsaUaybNjnHBIuWA+pJ4f7KsvvzZo+0t2CO02ZtZYmw==",
+  "success": true,
+  "projectFilePath": "D:\\c# aplicaciones\\LabSystem\\CaapaEntidades\\CapaEntidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emanu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\emanu\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\emanu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
