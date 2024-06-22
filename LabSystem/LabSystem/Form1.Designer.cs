@@ -65,15 +65,35 @@
             btnLimpiar = new Button();
             btnVolver = new Button();
             btnVenta = new Button();
+            tbClienteDNIp = new Panel();
+            tbClienteNumCallep = new Panel();
+            tbClienteApep = new Panel();
+            tbClienteRazSocp = new Panel();
+            tbClienteCondFiscp = new Panel();
+            tbClienteCuitp = new Panel();
+            tbClienteNomp = new Panel();
+            tbClienteCallep = new Panel();
+            PanelControl = new Panel();
             ((System.ComponentModel.ISupportInitialize)dvg).BeginInit();
+            tbClienteDNIp.SuspendLayout();
+            tbClienteNumCallep.SuspendLayout();
+            tbClienteApep.SuspendLayout();
+            tbClienteRazSocp.SuspendLayout();
+            tbClienteCondFiscp.SuspendLayout();
+            tbClienteCuitp.SuspendLayout();
+            tbClienteNomp.SuspendLayout();
+            tbClienteCallep.SuspendLayout();
+            PanelControl.SuspendLayout();
             SuspendLayout();
             // 
             // tbClienteNom
             // 
-            tbClienteNom.Location = new Point(175, 97);
+            tbClienteNom.Location = new Point(3, 3);
             tbClienteNom.Name = "tbClienteNom";
             tbClienteNom.Size = new Size(100, 23);
             tbClienteNom.TabIndex = 0;
+            tbClienteNom.Tag = "Nombre";
+            tbClienteNom.Leave += tbClienteDNI_Leave;
             // 
             // label2
             // 
@@ -87,7 +107,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(73, 134);
+            label3.Location = new Point(73, 137);
             label3.Name = "label3";
             label3.Size = new Size(51, 15);
             label3.TabIndex = 4;
@@ -95,15 +115,18 @@
             // 
             // tbClienteApe
             // 
-            tbClienteApe.Location = new Point(175, 126);
+            tbClienteApe.Location = new Point(3, 3);
             tbClienteApe.Name = "tbClienteApe";
             tbClienteApe.Size = new Size(100, 23);
             tbClienteApe.TabIndex = 3;
+            tbClienteApe.Tag = "Apellido";
+            tbClienteApe.KeyPress += tbClienteApe_KeyPress;
+            tbClienteApe.Leave += tbClienteDNI_Leave;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(73, 163);
+            label4.Location = new Point(72, 168);
             label4.Name = "label4";
             label4.Size = new Size(33, 15);
             label4.TabIndex = 6;
@@ -111,15 +134,17 @@
             // 
             // tbClienteCalle
             // 
-            tbClienteCalle.Location = new Point(175, 155);
+            tbClienteCalle.Location = new Point(3, 3);
             tbClienteCalle.Name = "tbClienteCalle";
             tbClienteCalle.Size = new Size(100, 23);
             tbClienteCalle.TabIndex = 5;
+            tbClienteCalle.Tag = "Calle";
+            tbClienteCalle.Leave += tbClienteDNI_Leave;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(73, 192);
+            label5.Location = new Point(72, 200);
             label5.Name = "label5";
             label5.Size = new Size(66, 15);
             label5.TabIndex = 8;
@@ -127,15 +152,18 @@
             // 
             // tbClienteNumCalle
             // 
-            tbClienteNumCalle.Location = new Point(175, 184);
+            tbClienteNumCalle.Location = new Point(3, 3);
             tbClienteNumCalle.Name = "tbClienteNumCalle";
             tbClienteNumCalle.Size = new Size(100, 23);
             tbClienteNumCalle.TabIndex = 7;
+            tbClienteNumCalle.Tag = "Numero Calle";
+            tbClienteNumCalle.KeyPress += tbClienteDNI_KeyPress;
+            tbClienteNumCalle.Leave += tbClienteDNI_Leave;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(73, 76);
+            label6.Location = new Point(73, 73);
             label6.Name = "label6";
             label6.Size = new Size(29, 15);
             label6.TabIndex = 10;
@@ -144,7 +172,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(73, 225);
+            label7.Location = new Point(72, 232);
             label7.Name = "label7";
             label7.Size = new Size(94, 15);
             label7.TabIndex = 12;
@@ -152,15 +180,18 @@
             // 
             // tbClienteCondFisc
             // 
-            tbClienteCondFisc.Location = new Point(175, 217);
+            tbClienteCondFisc.Location = new Point(3, 3);
             tbClienteCondFisc.Name = "tbClienteCondFisc";
             tbClienteCondFisc.Size = new Size(100, 23);
             tbClienteCondFisc.TabIndex = 11;
+            tbClienteCondFisc.Tag = "Condición Fiscal";
+            tbClienteCondFisc.KeyPress += tbClienteApe_KeyPress;
+            tbClienteCondFisc.Leave += tbClienteDNI_Leave;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(73, 254);
+            label8.Location = new Point(72, 264);
             label8.Name = "label8";
             label8.Size = new Size(73, 15);
             label8.TabIndex = 14;
@@ -168,14 +199,16 @@
             // 
             // tbClienteRazSoc
             // 
-            tbClienteRazSoc.Location = new Point(175, 246);
+            tbClienteRazSoc.Location = new Point(3, 3);
             tbClienteRazSoc.Name = "tbClienteRazSoc";
             tbClienteRazSoc.Size = new Size(100, 23);
             tbClienteRazSoc.TabIndex = 13;
+            tbClienteRazSoc.Tag = "Razón Social";
+            tbClienteRazSoc.Leave += tbClienteDNI_Leave;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(175, 275);
+            btnAgregar.Location = new Point(178, 293);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(100, 23);
             btnAgregar.TabIndex = 15;
@@ -186,7 +219,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(175, 9);
+            label1.Location = new Point(172, 9);
             label1.Name = "label1";
             label1.Size = new Size(89, 15);
             label1.TabIndex = 16;
@@ -194,7 +227,7 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(149, 330);
+            btnActualizar.Location = new Point(186, 347);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(75, 23);
             btnActualizar.TabIndex = 25;
@@ -204,7 +237,7 @@
             // 
             // btnBorrar
             // 
-            btnBorrar.Location = new Point(49, 330);
+            btnBorrar.Location = new Point(73, 347);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(75, 23);
             btnBorrar.TabIndex = 26;
@@ -218,7 +251,7 @@
             dvg.AllowUserToDeleteRows = false;
             dvg.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dvg.Columns.AddRange(new DataGridViewColumn[] { Column1, Column10, Column9, Column4, Column2, Column3, Column7, Column8, Column5, Column6, idPer });
-            dvg.Location = new Point(297, 105);
+            dvg.Location = new Point(297, 124);
             dvg.Name = "dvg";
             dvg.ReadOnly = true;
             dvg.RowTemplate.Height = 25;
@@ -317,7 +350,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(73, 47);
+            label10.Location = new Point(73, 41);
             label10.Name = "label10";
             label10.Size = new Size(27, 15);
             label10.TabIndex = 31;
@@ -325,21 +358,27 @@
             // 
             // tbClienteDNI
             // 
-            tbClienteDNI.Location = new Point(175, 39);
+            tbClienteDNI.Location = new Point(3, 3);
             tbClienteDNI.Name = "tbClienteDNI";
             tbClienteDNI.Size = new Size(100, 23);
             tbClienteDNI.TabIndex = 30;
+            tbClienteDNI.Tag = "DNI";
+            tbClienteDNI.KeyPress += tbClienteDNI_KeyPress;
+            tbClienteDNI.Leave += tbClienteDNI_Leave;
             // 
             // tbClienteCuit
             // 
-            tbClienteCuit.Location = new Point(175, 68);
+            tbClienteCuit.Location = new Point(3, 3);
             tbClienteCuit.Name = "tbClienteCuit";
             tbClienteCuit.Size = new Size(100, 23);
             tbClienteCuit.TabIndex = 32;
+            tbClienteCuit.Tag = "Cuit";
+            tbClienteCuit.KeyPress += tbClienteDNI_KeyPress;
+            tbClienteCuit.Leave += tbClienteDNI_Leave;
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(268, 332);
+            btnLimpiar.Location = new Point(297, 347);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(75, 23);
             btnLimpiar.TabIndex = 33;
@@ -359,13 +398,92 @@
             // 
             // btnVenta
             // 
-            btnVenta.Location = new Point(471, 304);
+            btnVenta.Location = new Point(472, 323);
             btnVenta.Name = "btnVenta";
             btnVenta.Size = new Size(111, 23);
             btnVenta.TabIndex = 35;
             btnVenta.Text = "Realizar venta";
             btnVenta.UseVisualStyleBackColor = true;
             btnVenta.Click += btnVenta_Click;
+            // 
+            // tbClienteDNIp
+            // 
+            tbClienteDNIp.Controls.Add(tbClienteDNI);
+            tbClienteDNIp.Location = new Point(3, 3);
+            tbClienteDNIp.Name = "tbClienteDNIp";
+            tbClienteDNIp.Size = new Size(106, 29);
+            tbClienteDNIp.TabIndex = 36;
+            // 
+            // tbClienteNumCallep
+            // 
+            tbClienteNumCallep.Controls.Add(tbClienteNumCalle);
+            tbClienteNumCallep.Location = new Point(3, 162);
+            tbClienteNumCallep.Name = "tbClienteNumCallep";
+            tbClienteNumCallep.Size = new Size(106, 29);
+            tbClienteNumCallep.TabIndex = 37;
+            // 
+            // tbClienteApep
+            // 
+            tbClienteApep.Controls.Add(tbClienteApe);
+            tbClienteApep.Location = new Point(3, 99);
+            tbClienteApep.Name = "tbClienteApep";
+            tbClienteApep.Size = new Size(106, 29);
+            tbClienteApep.TabIndex = 37;
+            // 
+            // tbClienteRazSocp
+            // 
+            tbClienteRazSocp.Controls.Add(tbClienteRazSoc);
+            tbClienteRazSocp.Location = new Point(3, 226);
+            tbClienteRazSocp.Name = "tbClienteRazSocp";
+            tbClienteRazSocp.Size = new Size(106, 29);
+            tbClienteRazSocp.TabIndex = 37;
+            // 
+            // tbClienteCondFiscp
+            // 
+            tbClienteCondFiscp.Controls.Add(tbClienteCondFisc);
+            tbClienteCondFiscp.Location = new Point(3, 194);
+            tbClienteCondFiscp.Name = "tbClienteCondFiscp";
+            tbClienteCondFiscp.Size = new Size(106, 29);
+            tbClienteCondFiscp.TabIndex = 38;
+            // 
+            // tbClienteCuitp
+            // 
+            tbClienteCuitp.Controls.Add(tbClienteCuit);
+            tbClienteCuitp.Location = new Point(3, 35);
+            tbClienteCuitp.Name = "tbClienteCuitp";
+            tbClienteCuitp.Size = new Size(106, 29);
+            tbClienteCuitp.TabIndex = 37;
+            // 
+            // tbClienteNomp
+            // 
+            tbClienteNomp.Controls.Add(tbClienteNom);
+            tbClienteNomp.Location = new Point(3, 67);
+            tbClienteNomp.Name = "tbClienteNomp";
+            tbClienteNomp.Size = new Size(106, 29);
+            tbClienteNomp.TabIndex = 37;
+            // 
+            // tbClienteCallep
+            // 
+            tbClienteCallep.Controls.Add(tbClienteCalle);
+            tbClienteCallep.Location = new Point(3, 130);
+            tbClienteCallep.Name = "tbClienteCallep";
+            tbClienteCallep.Size = new Size(106, 29);
+            tbClienteCallep.TabIndex = 37;
+            // 
+            // PanelControl
+            // 
+            PanelControl.Controls.Add(tbClienteDNIp);
+            PanelControl.Controls.Add(tbClienteCallep);
+            PanelControl.Controls.Add(tbClienteNumCallep);
+            PanelControl.Controls.Add(tbClienteNomp);
+            PanelControl.Controls.Add(tbClienteRazSocp);
+            PanelControl.Controls.Add(tbClienteCuitp);
+            PanelControl.Controls.Add(tbClienteApep);
+            PanelControl.Controls.Add(tbClienteCondFiscp);
+            PanelControl.Location = new Point(172, 32);
+            PanelControl.Name = "PanelControl";
+            PanelControl.Size = new Size(118, 256);
+            PanelControl.TabIndex = 39;
             // 
             // Form1
             // 
@@ -375,9 +493,7 @@
             Controls.Add(btnVenta);
             Controls.Add(btnVolver);
             Controls.Add(btnLimpiar);
-            Controls.Add(tbClienteCuit);
             Controls.Add(label10);
-            Controls.Add(tbClienteDNI);
             Controls.Add(cbTipo);
             Controls.Add(label9);
             Controls.Add(dvg);
@@ -386,21 +502,33 @@
             Controls.Add(label1);
             Controls.Add(btnAgregar);
             Controls.Add(label8);
-            Controls.Add(tbClienteRazSoc);
             Controls.Add(label7);
-            Controls.Add(tbClienteCondFisc);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(tbClienteNumCalle);
             Controls.Add(label4);
-            Controls.Add(tbClienteCalle);
             Controls.Add(label3);
-            Controls.Add(tbClienteApe);
             Controls.Add(label2);
-            Controls.Add(tbClienteNom);
+            Controls.Add(PanelControl);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dvg).EndInit();
+            tbClienteDNIp.ResumeLayout(false);
+            tbClienteDNIp.PerformLayout();
+            tbClienteNumCallep.ResumeLayout(false);
+            tbClienteNumCallep.PerformLayout();
+            tbClienteApep.ResumeLayout(false);
+            tbClienteApep.PerformLayout();
+            tbClienteRazSocp.ResumeLayout(false);
+            tbClienteRazSocp.PerformLayout();
+            tbClienteCondFiscp.ResumeLayout(false);
+            tbClienteCondFiscp.PerformLayout();
+            tbClienteCuitp.ResumeLayout(false);
+            tbClienteCuitp.PerformLayout();
+            tbClienteNomp.ResumeLayout(false);
+            tbClienteNomp.PerformLayout();
+            tbClienteCallep.ResumeLayout(false);
+            tbClienteCallep.PerformLayout();
+            PanelControl.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -410,17 +538,11 @@
         private TextBox tbClienteDNI;
         private Label label2;
         private Label label3;
-        private TextBox textBox2;
         private Label label4;
-        private TextBox textBox3;
         private Label label5;
-        private TextBox textBox4;
         private Label label6;
-        private TextBox textBox5;
         private Label label7;
-        private TextBox textBox6;
         private Label label8;
-        private TextBox textBox7;
         private Button btnActualizar;
         private TextBox tbClienteNom;
         private TextBox tbClienteApe;
@@ -450,5 +572,14 @@
         private Button btnLimpiar;
         private Button btnVolver;
         private Button btnVenta;
+        private Panel tbClienteDNIp;
+        private Panel tbClienteNumCallep;
+        private Panel tbClienteApep;
+        private Panel tbClienteRazSocp;
+        private Panel tbClienteCondFiscp;
+        private Panel tbClienteCuitp;
+        private Panel tbClienteNomp;
+        private Panel tbClienteCallep;
+        private Panel PanelControl;
     }
 }

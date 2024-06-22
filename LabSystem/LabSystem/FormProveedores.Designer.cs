@@ -68,7 +68,28 @@
             tbProveedorDesc = new TextBox();
             btnVolver = new Button();
             btnVerProd = new Button();
+            tbProveedorDNIp = new Panel();
+            tbProveedorRazSocp = new Panel();
+            tbProveedorNumCallep = new Panel();
+            tbProveedorCallep = new Panel();
+            tbProveedorApep = new Panel();
+            tbProveedorDescp = new Panel();
+            tbProveedorNomp = new Panel();
+            tbProveedorCuitp = new Panel();
+            tbProveedorCondFiscp = new Panel();
+            PanelControl = new Panel();
+            domainUpDown1 = new DomainUpDown();
             ((System.ComponentModel.ISupportInitialize)dvg).BeginInit();
+            tbProveedorDNIp.SuspendLayout();
+            tbProveedorRazSocp.SuspendLayout();
+            tbProveedorNumCallep.SuspendLayout();
+            tbProveedorCallep.SuspendLayout();
+            tbProveedorApep.SuspendLayout();
+            tbProveedorDescp.SuspendLayout();
+            tbProveedorNomp.SuspendLayout();
+            tbProveedorCuitp.SuspendLayout();
+            tbProveedorCondFiscp.SuspendLayout();
+            PanelControl.SuspendLayout();
             SuspendLayout();
             // 
             // btnLimpiar
@@ -83,15 +104,18 @@
             // 
             // tbProveedorCuit
             // 
-            tbProveedorCuit.Location = new Point(142, 105);
+            tbProveedorCuit.Location = new Point(2, 2);
             tbProveedorCuit.Name = "tbProveedorCuit";
             tbProveedorCuit.Size = new Size(100, 23);
             tbProveedorCuit.TabIndex = 56;
+            tbProveedorCuit.Tag = "Cuit";
+            tbProveedorCuit.KeyPress += tbProveedorDNI_KeyPress;
+            tbProveedorCuit.Leave += tbProveedorDNI_Leave;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(40, 84);
+            label10.Location = new Point(42, 65);
             label10.Name = "label10";
             label10.Size = new Size(27, 15);
             label10.TabIndex = 55;
@@ -99,10 +123,13 @@
             // 
             // tbProveedorDNI
             // 
-            tbProveedorDNI.Location = new Point(142, 76);
+            tbProveedorDNI.Location = new Point(2, 2);
             tbProveedorDNI.Name = "tbProveedorDNI";
             tbProveedorDNI.Size = new Size(100, 23);
             tbProveedorDNI.TabIndex = 54;
+            tbProveedorDNI.Tag = "DNI";
+            tbProveedorDNI.KeyPress += tbProveedorDNI_KeyPress;
+            tbProveedorDNI.Leave += tbProveedorDNI_Leave;
             // 
             // cbTipo
             // 
@@ -254,7 +281,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(40, 291);
+            label8.Location = new Point(42, 272);
             label8.Name = "label8";
             label8.Size = new Size(73, 15);
             label8.TabIndex = 46;
@@ -262,15 +289,17 @@
             // 
             // tbProveedorRazSoc
             // 
-            tbProveedorRazSoc.Location = new Point(142, 283);
+            tbProveedorRazSoc.Location = new Point(2, 2);
             tbProveedorRazSoc.Name = "tbProveedorRazSoc";
             tbProveedorRazSoc.Size = new Size(100, 23);
             tbProveedorRazSoc.TabIndex = 45;
+            tbProveedorRazSoc.Tag = "Razón social";
+            tbProveedorRazSoc.Leave += tbProveedorDNI_Leave;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(40, 262);
+            label7.Location = new Point(38, 244);
             label7.Name = "label7";
             label7.Size = new Size(94, 15);
             label7.TabIndex = 44;
@@ -278,15 +307,18 @@
             // 
             // tbProveedorCondFisc
             // 
-            tbProveedorCondFisc.Location = new Point(142, 254);
+            tbProveedorCondFisc.Location = new Point(2, 2);
             tbProveedorCondFisc.Name = "tbProveedorCondFisc";
             tbProveedorCondFisc.Size = new Size(100, 23);
             tbProveedorCondFisc.TabIndex = 43;
+            tbProveedorCondFisc.Tag = "Condición Fiscal";
+            tbProveedorCondFisc.KeyPress += tbProveedorApe_KeyPress;
+            tbProveedorCondFisc.Leave += tbProveedorDNI_Leave;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(40, 113);
+            label6.Location = new Point(42, 97);
             label6.Name = "label6";
             label6.Size = new Size(29, 15);
             label6.TabIndex = 42;
@@ -295,7 +327,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(40, 229);
+            label5.Location = new Point(40, 213);
             label5.Name = "label5";
             label5.Size = new Size(66, 15);
             label5.TabIndex = 41;
@@ -303,15 +335,18 @@
             // 
             // tbProveedorNumCalle
             // 
-            tbProveedorNumCalle.Location = new Point(142, 221);
+            tbProveedorNumCalle.Location = new Point(2, 2);
             tbProveedorNumCalle.Name = "tbProveedorNumCalle";
             tbProveedorNumCalle.Size = new Size(100, 23);
             tbProveedorNumCalle.TabIndex = 40;
+            tbProveedorNumCalle.Tag = "Numero Calle";
+            tbProveedorNumCalle.KeyPress += tbProveedorDNI_KeyPress;
+            tbProveedorNumCalle.Leave += tbProveedorDNI_Leave;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(40, 200);
+            label4.Location = new Point(42, 184);
             label4.Name = "label4";
             label4.Size = new Size(33, 15);
             label4.TabIndex = 39;
@@ -319,15 +354,17 @@
             // 
             // tbProveedorCalle
             // 
-            tbProveedorCalle.Location = new Point(142, 192);
+            tbProveedorCalle.Location = new Point(2, 2);
             tbProveedorCalle.Name = "tbProveedorCalle";
             tbProveedorCalle.Size = new Size(100, 23);
             tbProveedorCalle.TabIndex = 38;
+            tbProveedorCalle.Tag = "Calle";
+            tbProveedorCalle.Leave += tbProveedorDNI_Leave;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(40, 171);
+            label3.Location = new Point(42, 155);
             label3.Name = "label3";
             label3.Size = new Size(51, 15);
             label3.TabIndex = 37;
@@ -335,15 +372,18 @@
             // 
             // tbProveedorApe
             // 
-            tbProveedorApe.Location = new Point(142, 163);
+            tbProveedorApe.Location = new Point(2, 2);
             tbProveedorApe.Name = "tbProveedorApe";
             tbProveedorApe.Size = new Size(100, 23);
             tbProveedorApe.TabIndex = 36;
+            tbProveedorApe.Tag = "Apellido";
+            tbProveedorApe.KeyPress += tbProveedorApe_KeyPress;
+            tbProveedorApe.Leave += tbProveedorDNI_Leave;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(40, 142);
+            label2.Location = new Point(40, 126);
             label2.Name = "label2";
             label2.Size = new Size(51, 15);
             label2.TabIndex = 35;
@@ -351,10 +391,12 @@
             // 
             // tbProveedorNom
             // 
-            tbProveedorNom.Location = new Point(142, 134);
+            tbProveedorNom.Location = new Point(2, 2);
             tbProveedorNom.Name = "tbProveedorNom";
             tbProveedorNom.Size = new Size(100, 23);
             tbProveedorNom.TabIndex = 34;
+            tbProveedorNom.Tag = "Nombre";
+            tbProveedorNom.Leave += tbProveedorDNI_Leave;
             // 
             // label11
             // 
@@ -367,11 +409,13 @@
             // 
             // tbProveedorDesc
             // 
-            tbProveedorDesc.Location = new Point(142, 317);
+            tbProveedorDesc.Location = new Point(2, 2);
             tbProveedorDesc.Multiline = true;
             tbProveedorDesc.Name = "tbProveedorDesc";
             tbProveedorDesc.Size = new Size(217, 50);
             tbProveedorDesc.TabIndex = 59;
+            tbProveedorDesc.Tag = "Descripción";
+            tbProveedorDesc.Leave += tbProveedorDNI_Leave;
             // 
             // btnVolver
             // 
@@ -393,19 +437,114 @@
             btnVerProd.UseVisualStyleBackColor = true;
             btnVerProd.Click += button1_Click;
             // 
+            // tbProveedorDNIp
+            // 
+            tbProveedorDNIp.BackColor = Color.Transparent;
+            tbProveedorDNIp.Controls.Add(tbProveedorDNI);
+            tbProveedorDNIp.Location = new Point(9, 10);
+            tbProveedorDNIp.Name = "tbProveedorDNIp";
+            tbProveedorDNIp.Size = new Size(104, 28);
+            tbProveedorDNIp.TabIndex = 62;
+            // 
+            // tbProveedorRazSocp
+            // 
+            tbProveedorRazSocp.BackColor = Color.Transparent;
+            tbProveedorRazSocp.Controls.Add(tbProveedorRazSoc);
+            tbProveedorRazSocp.Location = new Point(9, 220);
+            tbProveedorRazSocp.Name = "tbProveedorRazSocp";
+            tbProveedorRazSocp.Size = new Size(104, 28);
+            tbProveedorRazSocp.TabIndex = 63;
+            // 
+            // tbProveedorNumCallep
+            // 
+            tbProveedorNumCallep.BackColor = Color.Transparent;
+            tbProveedorNumCallep.Controls.Add(tbProveedorNumCalle);
+            tbProveedorNumCallep.Location = new Point(9, 158);
+            tbProveedorNumCallep.Name = "tbProveedorNumCallep";
+            tbProveedorNumCallep.Size = new Size(104, 28);
+            tbProveedorNumCallep.TabIndex = 65;
+            // 
+            // tbProveedorCallep
+            // 
+            tbProveedorCallep.BackColor = Color.Transparent;
+            tbProveedorCallep.Controls.Add(tbProveedorCalle);
+            tbProveedorCallep.Location = new Point(9, 129);
+            tbProveedorCallep.Name = "tbProveedorCallep";
+            tbProveedorCallep.Size = new Size(104, 28);
+            tbProveedorCallep.TabIndex = 65;
+            // 
+            // tbProveedorApep
+            // 
+            tbProveedorApep.BackColor = Color.Transparent;
+            tbProveedorApep.Controls.Add(tbProveedorApe);
+            tbProveedorApep.Location = new Point(9, 100);
+            tbProveedorApep.Name = "tbProveedorApep";
+            tbProveedorApep.Size = new Size(104, 28);
+            tbProveedorApep.TabIndex = 65;
+            // 
+            // tbProveedorDescp
+            // 
+            tbProveedorDescp.BackColor = Color.Transparent;
+            tbProveedorDescp.Controls.Add(tbProveedorDesc);
+            tbProveedorDescp.Location = new Point(9, 254);
+            tbProveedorDescp.Name = "tbProveedorDescp";
+            tbProveedorDescp.Size = new Size(221, 54);
+            tbProveedorDescp.TabIndex = 66;
+            // 
+            // tbProveedorNomp
+            // 
+            tbProveedorNomp.BackColor = Color.Transparent;
+            tbProveedorNomp.Controls.Add(tbProveedorNom);
+            tbProveedorNomp.Location = new Point(9, 71);
+            tbProveedorNomp.Name = "tbProveedorNomp";
+            tbProveedorNomp.Size = new Size(104, 28);
+            tbProveedorNomp.TabIndex = 67;
+            // 
+            // tbProveedorCuitp
+            // 
+            tbProveedorCuitp.BackColor = Color.Transparent;
+            tbProveedorCuitp.Controls.Add(tbProveedorCuit);
+            tbProveedorCuitp.Location = new Point(9, 42);
+            tbProveedorCuitp.Name = "tbProveedorCuitp";
+            tbProveedorCuitp.Size = new Size(104, 28);
+            tbProveedorCuitp.TabIndex = 65;
+            // 
+            // tbProveedorCondFiscp
+            // 
+            tbProveedorCondFiscp.BackColor = Color.Transparent;
+            tbProveedorCondFiscp.Controls.Add(tbProveedorCondFisc);
+            tbProveedorCondFiscp.Location = new Point(9, 189);
+            tbProveedorCondFiscp.Name = "tbProveedorCondFiscp";
+            tbProveedorCondFiscp.Size = new Size(104, 28);
+            tbProveedorCondFiscp.TabIndex = 68;
+            // 
+            // PanelControl
+            // 
+            PanelControl.Controls.Add(tbProveedorDescp);
+            PanelControl.Controls.Add(tbProveedorDNIp);
+            PanelControl.Controls.Add(tbProveedorRazSocp);
+            PanelControl.Controls.Add(tbProveedorCondFiscp);
+            PanelControl.Controls.Add(tbProveedorNumCallep);
+            PanelControl.Controls.Add(tbProveedorCallep);
+            PanelControl.Controls.Add(tbProveedorApep);
+            PanelControl.Controls.Add(tbProveedorNomp);
+            PanelControl.Controls.Add(tbProveedorCuitp);
+            PanelControl.Location = new Point(138, 50);
+            PanelControl.Name = "PanelControl";
+            PanelControl.Size = new Size(240, 317);
+            PanelControl.TabIndex = 69;
+            // 
             // FormProveedores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1314, 450);
+            Controls.Add(domainUpDown1);
             Controls.Add(btnVerProd);
             Controls.Add(btnVolver);
-            Controls.Add(tbProveedorDesc);
             Controls.Add(label11);
             Controls.Add(btnLimpiar);
-            Controls.Add(tbProveedorCuit);
             Controls.Add(label10);
-            Controls.Add(tbProveedorDNI);
             Controls.Add(cbTipo);
             Controls.Add(label9);
             Controls.Add(dvg);
@@ -414,21 +553,35 @@
             Controls.Add(label1);
             Controls.Add(btnAgregar);
             Controls.Add(label8);
-            Controls.Add(tbProveedorRazSoc);
             Controls.Add(label7);
-            Controls.Add(tbProveedorCondFisc);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(tbProveedorNumCalle);
             Controls.Add(label4);
-            Controls.Add(tbProveedorCalle);
             Controls.Add(label3);
-            Controls.Add(tbProveedorApe);
             Controls.Add(label2);
-            Controls.Add(tbProveedorNom);
+            Controls.Add(PanelControl);
             Name = "FormProveedores";
             Text = "FormProveedores";
             ((System.ComponentModel.ISupportInitialize)dvg).EndInit();
+            tbProveedorDNIp.ResumeLayout(false);
+            tbProveedorDNIp.PerformLayout();
+            tbProveedorRazSocp.ResumeLayout(false);
+            tbProveedorRazSocp.PerformLayout();
+            tbProveedorNumCallep.ResumeLayout(false);
+            tbProveedorNumCallep.PerformLayout();
+            tbProveedorCallep.ResumeLayout(false);
+            tbProveedorCallep.PerformLayout();
+            tbProveedorApep.ResumeLayout(false);
+            tbProveedorApep.PerformLayout();
+            tbProveedorDescp.ResumeLayout(false);
+            tbProveedorDescp.PerformLayout();
+            tbProveedorNomp.ResumeLayout(false);
+            tbProveedorNomp.PerformLayout();
+            tbProveedorCuitp.ResumeLayout(false);
+            tbProveedorCuitp.PerformLayout();
+            tbProveedorCondFiscp.ResumeLayout(false);
+            tbProveedorCondFiscp.PerformLayout();
+            PanelControl.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -475,5 +628,16 @@
         private DataGridViewTextBoxColumn idPer;
         private DataGridViewTextBoxColumn Column11;
         private Button btnVerProd;
+        private Panel tbProveedorDNIp;
+        private Panel tbProveedorRazSocp;
+        private Panel tbProveedorNumCallep;
+        private Panel tbProveedorCallep;
+        private Panel tbProveedorApep;
+        private Panel tbProveedorDescp;
+        private Panel tbProveedorNomp;
+        private Panel tbProveedorCuitp;
+        private Panel tbProveedorCondFiscp;
+        private Panel PanelControl;
+        private DomainUpDown domainUpDown1;
     }
 }

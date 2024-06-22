@@ -55,13 +55,15 @@ namespace LabSystem
         {
             FormVenta fv = new FormVenta();
             fv.CargarProd();
-            if (cbTipo.SelectedIndex==0) {
-                fv.DatosCliente(tbClienteNom.Text+" "+tbClienteApe.Text, 
-                    tbClienteCalle.Text + " " + tbClienteNumCalle.Text,tbClienteDNI.Text,
+            if (cbTipo.SelectedIndex == 0)
+            {
+                fv.DatosCliente(tbClienteNom.Text + " " + tbClienteApe.Text,
+                    tbClienteCalle.Text + " " + tbClienteNumCalle.Text, tbClienteDNI.Text,
                     tbClienteCondFisc.Text
                     );
             }
-            else {
+            else
+            {
                 fv.DatosCliente(tbClienteNom.Text,
                     tbClienteCalle.Text + " " + tbClienteNumCalle.Text, tbClienteCuit.Text,
                     tbClienteRazSoc.Text
@@ -75,7 +77,6 @@ namespace LabSystem
 
         public void Guardar() //metodo para agregar cliente
         {
-            int cargar = 0;//la variable cargar aumenta cada vez que un campo no este vacio
             long cuit = 0;
             int numCalle = 0;
             int dni = 0;
@@ -83,80 +84,31 @@ namespace LabSystem
             int resultadoC = 0;
             Cliente cliente = new Cliente();//objeto de la clase cliente que se va a cargar en la bd
 
-            //Si el tipo de cliente es persona, index=0 agrego el DNI
-            if (cbTipo.SelectedIndex == 0)
+            if (!camposVacios())
             {
-                //agrego el contenido del tbDNI al atributo DNI del cliente
-                if (!tbClienteDNI.Text.Equals("") && tbClienteDNI.Text.Length == 8)
+
+                if (tbClienteDNI.Enabled)
                 {
                     dni = int.Parse(tbClienteDNI.Text);
                     cliente.setDni(dni);
-                    cargar++;
                 }
-                else { MessageBox.Show("El campo DNI esta vacio, o el DNI no tiene 8 numeros"); }
-            }
-
-            //Si el tipo de cliente es empresa, index=1 agrego el cuit
-            if (cbTipo.SelectedIndex == 1)
-            {
-                //agrego el contenido del tbCuit al atributo cuit del cliente
-                if (!tbClienteCuit.Text.Equals("") && tbClienteCuit.Text.Length == 11)
+                else
                 {
                     cuit = (long)Convert.ToDouble(tbClienteCuit.Text);
                     cliente.setCuit(cuit);
-                    cargar++;
                 }
-                else { MessageBox.Show("El campo Cuit esta vacio, o el cuit no tiene 11 numero"); }
-            }
-            //agrego el contenido del tbNombre al atributo nombre del cliente
-            if (!tbClienteNom.Text.Equals("")) { cliente.setNombre(tbClienteNom.Text); cargar++; }
-            else
-            {
-                MessageBox.Show("EL campo Nombre calle esta vacio");
-            }
-            //Si el tipo de cliente es persona, index=0 agrego el apellido
-            if (cbTipo.SelectedIndex == 0)
-            {
-                //agrego el contenido del tbApe al atributo apellido del cliente
-                if (!tbClienteApe.Text.Equals("")) { cliente.setApellido(tbClienteApe.Text); cargar++; }
-                else
-                {
-                    MessageBox.Show("EL campo Apellido calle esta vacio");
-                }
-            }
-            //agrego el contenido del tbCalle al atributo nombre calle del cliente
-            if (!tbClienteCalle.Text.Equals("")) { cliente.setNombreCalle(tbClienteCalle.Text); cargar++; }
-            else
-            {
-                MessageBox.Show("EL campo Nombre calle calle esta vacio");
-            }
 
-            //agrego el contenido del tbNumCalle al atributo numero calle del cliente
-            if (!tbClienteNumCalle.Text.Equals("") && !tbClienteNumCalle.Text.Equals("0"))
-            {
+                cliente.setNombre(tbClienteNom.Text);
+
+                if (tbClienteApe.Enabled) { cliente.setApellido(tbClienteApe.Text); }
+
+                cliente.setNombreCalle(tbClienteCalle.Text);
                 numCalle = int.Parse(tbClienteNumCalle.Text);
                 cliente.setNumCalle(numCalle);
-                cargar++;
-            }
-            else { MessageBox.Show("EL campo Numero calle esta vacio"); }
 
-            //Si el tipo de cliente es persona, index=0 agrego la condicio fiscal
-            if (cbTipo.SelectedIndex == 0)
-            {
-                //agrego el contenido del tbCondicionFiscal al atributo condicion fiscal del cliente
-                if (!tbClienteCondFisc.Text.Equals("")) { cliente.setCondicionFiscal(tbClienteCondFisc.Text); cargar++; }
-                else { MessageBox.Show("EL campo Condicion fiscal calle esta vacio"); }
-            }
+                if (tbClienteCondFisc.Enabled) { cliente.setCondicionFiscal(tbClienteCondFisc.Text); }
+                else { cliente.setRazonSocial(tbClienteRazSoc.Text); }
 
-            //Si el tipo de cliente es empresa, index=1 agrego la razon social
-            if (cbTipo.SelectedIndex == 1)
-            {
-                //agrego el contenido del tbRazonsoc al atributo razon social del cliente
-                if (!tbClienteRazSoc.Text.Equals("")) { cliente.setRazonSocial(tbClienteRazSoc.Text); cargar++; }
-                else { MessageBox.Show("EL campo Razon social calle esta vacio"); }
-            }
-            if (cargar == 6 && cbTipo.SelectedIndex == 0 || cargar == 5 && cbTipo.SelectedIndex == 1)//si cargar es igual a 6 significa que no hay ningun campo vacio
-            {
                 //envio el objeto cliente a la capa negocioPersona
                 PersonaNegocio personaNegocio = new PersonaNegocio();
                 long resultado = personaNegocio.unicaP(cliente);
@@ -245,6 +197,7 @@ namespace LabSystem
 
         public void SelecTipoCli()//metodo para seleccionar el tipo de cliente
         {
+            desHabilitarRojo();
             habilitar();
             int seleccion = cbTipo.SelectedIndex;
             if (seleccion == 0)//segun el tipo de cliente se habilitan algunos campos, 0 es persona 1 es empresa
@@ -271,98 +224,50 @@ namespace LabSystem
 
         public void Actualizar()//metodo para actualizar clientes
         {
-            if (idCliente != 0)
+            if (idCliente != 0 && !camposVacios())
             {
                 long cuit = 0;
                 int dni = 0;
                 int numCalle = 0;
                 Cliente cliente = new Cliente();//objeto de la clase cliente que se va a cargar en la bd
 
-                if (cbTipo.SelectedIndex == 0)
+                if (tbClienteDNI.Enabled)
                 {
-                    //agrego el contenido del tbDNI al atributo DNI del cliente
-                    if (!tbClienteDNI.Text.Equals("") && tbClienteDNI.Text.Length == 8)
-                    {
-                        dni = int.Parse(tbClienteDNI.Text);
-                        cliente.setDni(dni);
-                    }
-                    else { MessageBox.Show("El campo DNI esta vacio, o el DNI no tiene 8 numeros"); }
+                    dni = int.Parse(tbClienteDNI.Text);
+                    cliente.setDni(dni);
                 }
-
-                if (cbTipo.SelectedIndex == 1)
-                {
-                    //agrego el contenido del tbCuit al atributo cuit del cliente
-                    if (!tbClienteCuit.Text.Equals("") && tbClienteCuit.Text.Length == 11)
-                    {
-                        cuit = (long)Convert.ToDouble(tbClienteCuit.Text);
-                        cliente.setCuit(cuit);
-                    }
-                    else { MessageBox.Show("El campo Cuit esta vacio, o el cuit no tiene 11 numeros"); }
-                }
-                //agrego el contenido del tbNombre al atributo nombre del cliente
-                if (!tbClienteNom.Text.Equals("")) { cliente.setNombre(tbClienteNom.Text); }
                 else
                 {
-                    MessageBox.Show("EL campo Nombre esta vacio");
+                    cuit = (long)Convert.ToDouble(tbClienteCuit.Text);
+                    cliente.setCuit(cuit);
                 }
 
-                //Si el tipo de cliente es persona, index=0 agrego el apellido
-                if (cbTipo.SelectedIndex == 0)
-                {
-                    //agrego el contenido del tbApe al atributo apellido del cliente
-                    if (!tbClienteApe.Text.Equals("")) { cliente.setApellido(tbClienteApe.Text); }
-                    else
-                    {
-                        MessageBox.Show("EL campo Apellido calle esta vacio");
-                    }
-                }
+                cliente.setNombre(tbClienteNom.Text);
 
-                //agrego el contenido del tbCalle al atributo nombre calle del cliente
-                if (!tbClienteCalle.Text.Equals("")) { cliente.setNombreCalle(tbClienteCalle.Text); }
-                else
-                {
-                    MessageBox.Show("EL campo Calle esta vacio");
-                }
+                if (tbClienteApe.Enabled) { cliente.setApellido(tbClienteApe.Text); }
 
-                //agrego el contenido del tbNumCalle al atributo numero calle del cliente
-                if (!tbClienteNumCalle.Text.Equals("") && !tbClienteNumCalle.Text.Equals("0"))
-                {
-                    numCalle = int.Parse(tbClienteNumCalle.Text);
-                    cliente.setNumCalle(numCalle);
-                }
-                else { MessageBox.Show("EL campo Numero calle esta vacio"); }
+                cliente.setNombreCalle(tbClienteCalle.Text);
+                numCalle = int.Parse(tbClienteNumCalle.Text);
+                cliente.setNumCalle(numCalle);
 
-                if (cbTipo.Text.Equals("Persona"))
-                {
-                    //agrego el contenido del tbCondicionFiscal al atributo condicion fiscal del cliente
-                    if (!tbClienteCondFisc.Text.Equals("")) { cliente.setCondicionFiscal(tbClienteCondFisc.Text); }
-                    else { MessageBox.Show("EL campo Condicion fiscal esta vacio"); }
-                }
+                if (tbClienteCondFisc.Enabled) { cliente.setCondicionFiscal(tbClienteCondFisc.Text); }
+                else { cliente.setRazonSocial(tbClienteRazSoc.Text); }
 
-                if (cbTipo.Text.Equals("Empresa"))
-                {
-                    //agrego el contenido del tbRazonsoc al atributo razon social del cliente
-                    if (!tbClienteRazSoc.Text.Equals("")) { cliente.setRazonSocial(tbClienteRazSoc.Text); }
-                    else { MessageBox.Show("EL campo Razon social esta vacio"); }
-                }
-                if (!tbClienteNom.Text.Equals("") && !tbClienteCalle.Text.Equals("") && !tbClienteNumCalle.Text.Equals(""))
-                {
-                    //agrego el contenido del tbRazonsoc al atributo razon social del cliente
-                    cliente.setTipo(cbTipo.SelectedIndex);
+                //agrego el contenido del tbRazonsoc al atributo razon social del cliente
+                cliente.setTipo(cbTipo.SelectedIndex);
 
-                    cliente.setCodPersona(idPersona);
+                cliente.setCodPersona(idPersona);
 
-                    //envio el objeto cliente a la capa negocioPersona
-                    PersonaNegocio personaNegocio = new PersonaNegocio();
-                    personaNegocio.Update(cliente, idPersona);
+                //envio el objeto cliente a la capa negocioPersona
+                PersonaNegocio personaNegocio = new PersonaNegocio();
+                personaNegocio.Update(cliente, idPersona);
 
-                    //envio el objeto cliente a la capa negocioCliente
-                    ClienteNegocio cn = new ClienteNegocio();
-                    cn.updateC(cliente);
-                    LimpiarDatos();
-                    btnActualizar.Enabled = false;
-                    btnBorrar.Enabled = false;
-                }
+                //envio el objeto cliente a la capa negocioCliente
+                ClienteNegocio cn = new ClienteNegocio();
+                cn.updateC(cliente);
+                LimpiarDatos();
+                btnActualizar.Enabled = false;
+                btnBorrar.Enabled = false;
             }
         }
 
@@ -397,6 +302,16 @@ namespace LabSystem
             tbClienteNumCalle.Enabled = false;
             tbClienteCondFisc.Enabled = false;
             tbClienteRazSoc.Enabled = false;
+
+            tbClienteDNIp.BackColor = Color.Transparent;
+            tbClienteCuitp.BackColor = Color.Transparent;
+            tbClienteNomp.BackColor = Color.Transparent;
+            tbClienteApep.BackColor = Color.Transparent;
+            tbClienteCallep.BackColor = Color.Transparent;
+            tbClienteNumCallep.BackColor = Color.Transparent;
+            tbClienteCondFiscp.BackColor = Color.Transparent;
+            tbClienteRazSocp.BackColor = Color.Transparent;
+
             btnAgregar.Enabled = false;
             btnActualizar.Enabled = false;
             btnBorrar.Enabled = false;
@@ -416,6 +331,18 @@ namespace LabSystem
             btnAgregar.Enabled = true;
         }
 
+        public void desHabilitarRojo()
+        {
+            tbClienteDNIp.BackColor = Color.Transparent;
+            tbClienteCuitp.BackColor = Color.Transparent;
+            tbClienteNomp.BackColor = Color.Transparent;
+            tbClienteApep.BackColor = Color.Transparent;
+            tbClienteCallep.BackColor = Color.Transparent;
+            tbClienteNumCallep.BackColor = Color.Transparent;
+            tbClienteCondFiscp.BackColor = Color.Transparent;
+            tbClienteRazSocp.BackColor = Color.Transparent;
+        }
+
         public void LimpiarDatos()
         {
             idCliente = 0;
@@ -431,6 +358,98 @@ namespace LabSystem
             dvg.Rows.Clear();
             cbTipo.SelectedIndex = -1;
             CargarTodo();
+            desHabilitar();
+        }
+
+        private void tbClienteDNI_Leave(object sender, EventArgs e)
+        {
+            TextBox textBoxActual = (TextBox)sender;
+            if (textBoxActual.Text.Equals(""))
+            {
+                MessageBox.Show("El campo " + textBoxActual.Tag + " se encuentra vacio");
+
+                foreach (Control ctrl in PanelControl.Controls)
+                {
+                    if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                }
+            }
+            else
+            {
+                if (textBoxActual.Name.Equals("tbClienteDNI") && textBoxActual.Text.Length != 8)
+                {
+                    MessageBox.Show("El campo " + textBoxActual.Tag + " tiene que tener 8 numeros");
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                    }
+                }
+                else if (textBoxActual.Name.Equals("tbClienteCuit") && textBoxActual.Text.Length != 11)
+                {
+                    MessageBox.Show("El campo " + textBoxActual.Tag + " tiene que tener 11 numeros");
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                    }
+                }
+                else if (textBoxActual.Name.Equals("tbClienteNumCalle") && textBoxActual.Text.Equals("0"))
+                {
+                    MessageBox.Show("El campo " + textBoxActual.Tag + " no pede tener el valor 0");
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                    }
+                }
+                else
+                {
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Transparent; }
+                    }
+                }
+            }
+        }
+
+        public bool camposVacios()
+        {
+            bool vacio = false;
+
+            foreach (Control ctrl in PanelControl.Controls)
+            {
+                if (ctrl is Panel && ctrl.HasChildren)
+                {
+                    Point p = new Point(3, 3);
+                    if (ctrl.GetChildAtPoint(p).Text.Equals("") && ctrl.GetChildAtPoint(p).Enabled)
+                    {
+                        MessageBox.Show("El campo " + ctrl.GetChildAtPoint(p).Tag + " se encuentra vacio");
+                        foreach (Control ctrl2 in PanelControl.Controls)
+                        {
+                            if (ctrl2 is Panel && ctrl2.Name == ctrl.GetChildAtPoint(p).Name + "p") { ctrl2.BackColor = Color.Red; }
+                        }
+                        vacio = true;
+                    }
+                    else if (tbClienteCuit.Enabled && tbClienteCuit.Text.Length != 11 || tbClienteDNI.Enabled && tbClienteDNI.Text.Length != 8 || tbClienteNumCalle.Text.Equals("0"))
+                    {
+                        vacio = true;
+                    }
+                }
+            }
+            return vacio;
+        }
+
+        private void tbClienteDNI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbClienteApe_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

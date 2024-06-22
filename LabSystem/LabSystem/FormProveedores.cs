@@ -64,97 +64,45 @@ namespace LabSystem
 
         public void Guardar() //metodo para agregar Proveedor
         {
-            int cargar = 0;//la variable cargar aumenta cada vez que un campo no este vacio
-            long cuit = 0;
-            int numCalle = 0;
-            int dni = 0;
-            int resultadoP = 0;
-            int resultadoPr = 0;
-            Proveedor Proveedor = new Proveedor();//objeto de la clase Proveedor que se va a cargar en la bd
-
-            //Si el tipo de Proveedor es persona, index=0 agrego el DNI
-            if (cbTipo.SelectedIndex == 0)
+            if (!camposVacios())
             {
-                //agrego el contenido del tbDNI al atributo DNI del Proveedor
-                if (!tbProveedorDNI.Text.Equals("") && tbProveedorDNI.Text.Length == 8)
-                {
-                    dni = int.Parse(tbProveedorDNI.Text);
-                    Proveedor.setDni(dni);
-                    cargar++;
-                }
-                else { MessageBox.Show("El campo DNI esta vacio, o el DNI no tiene 8 numeros"); }
-            }
+                //int cargar = 0;//la variable cargar aumenta cada vez que un campo no este vacio
+                long cuit = 0;
+                int numCalle = 0;
+                int dni = 0;
+                int resultadoP = 0;
+                int resultadoPr = 0;
+                Proveedor Proveedor = new Proveedor();//objeto de la clase Proveedor que se va a cargar en la bd
 
-            //Si el tipo de Proveedor es empresa, index=1 agrego el cuit
-            if (cbTipo.SelectedIndex == 1)
-            {
-                //agrego el contenido del tbCuit al atributo cuit del Proveedor
-                if (!tbProveedorCuit.Text.Equals("") && tbProveedorCuit.Text.Length == 11)
+                if (tbProveedorCuit.Enabled)
                 {
                     cuit = (long)Convert.ToDouble(tbProveedorCuit.Text);
                     Proveedor.setCuit(cuit);
-                    cargar++;
                 }
-                else { MessageBox.Show("El campo Cuit esta vacio, o el cuit no tiene 11 numero"); }
-            }
-            //agrego el contenido del tbNombre al atributo nombre del Proveedor
-            if (!tbProveedorNom.Text.Equals("")) { Proveedor.setNombre(tbProveedorNom.Text); cargar++; }
-            else
-            {
-                MessageBox.Show("EL campo Nombre esta vacio");
-            }
-            //Si el tipo de Proveedor es persona, index=0 agrego el apellido
-            if (cbTipo.SelectedIndex == 0)
-            {
-                //agrego el contenido del tbApe al atributo apellido del Proveedor
-                if (!tbProveedorApe.Text.Equals("")) { Proveedor.setApellido(tbProveedorApe.Text); cargar++; }
                 else
                 {
-                    MessageBox.Show("EL campo Apellido esta vacio");
+                    dni = int.Parse(tbProveedorDNI.Text);
+                    Proveedor.setDni(dni);
                 }
-            }
-            //agrego el contenido del tbCalle al atributo nombre calle del Proveedor
-            if (!tbProveedorCalle.Text.Equals("")) { Proveedor.setNombreCalle(tbProveedorCalle.Text); cargar++; }
-            else
-            {
-                MessageBox.Show("EL campo Nombre calle calle esta vacio");
-            }
 
-            //agrego el contenido del tbNumCalle al atributo numero calle del Proveedor
-            if (!tbProveedorNumCalle.Text.Equals("") && !tbProveedorNumCalle.Text.Equals("0"))
-            {
+                //agrego el contenido del tbNombre al atributo nombre del Proveedor
+                Proveedor.setNombre(tbProveedorNom.Text);
+
+                if (tbProveedorApe.Enabled) { Proveedor.setApellido(tbProveedorApe.Text); }
+
+                //agrego el contenido del tbCalle al atributo nombre calle del Proveedor
+                Proveedor.setNombreCalle(tbProveedorCalle.Text);
+
                 numCalle = int.Parse(tbProveedorNumCalle.Text);
                 Proveedor.setNumCalle(numCalle);
-                cargar++;
-            }
-            else { MessageBox.Show("EL campo Numero calle esta vacio"); }
 
-            //Si el tipo deProveedor es persona, index=0 agrego la condicio fiscal
-            if (cbTipo.SelectedIndex == 0)
-            {
-                //agrego el contenido del tbCondicionFiscal al atributo condicion fiscal del Proveedor
-                if (!tbProveedorCondFisc.Text.Equals("")) { Proveedor.setCondicionFiscal(tbProveedorCondFisc.Text); cargar++; }
-                else { MessageBox.Show("EL campo Condicion fiscal esta vacio"); }
-            }
+                if (tbProveedorCondFisc.Enabled) { Proveedor.setCondicionFiscal(tbProveedorCondFisc.Text); }
+                else { Proveedor.SetRazonSocial(tbProveedorRazSoc.Text); }
 
-            //Si el tipo de Proveedor es empresa, index=1 agrego la razon social
-            if (cbTipo.SelectedIndex == 1)
-            {
-                //agrego el contenido del tbRazonsoc al atributo razon social del Proveedor
-                if (!tbProveedorRazSoc.Text.Equals("")) { Proveedor.SetRazonSocial(tbProveedorRazSoc.Text); cargar++; }
-                else { MessageBox.Show("EL campo Razon social esta vacio"); }
-            }
 
-            //agrego el contenido del tbDesc al atributo nombre calle del Proveedor
-            if (!tbProveedorDesc.Text.Equals("")) { Proveedor.SetDescripcion(tbProveedorDesc.Text); cargar++; }
-            else
-            {
-                MessageBox.Show("EL campo Descripcion esta vacio");
-            }
+                //agrego el contenido del tbDesc al atributo descripcion del Proveedor
+                Proveedor.SetDescripcion(tbProveedorDesc.Text);
 
-            if (cargar == 7 && cbTipo.SelectedIndex == 0 || cargar == 6 && cbTipo.SelectedIndex == 1)//si cargar es igual a 6 significa que no hay ningun campo vacio
-            {
-                //envio el objeto Proveedor a la capa negocioPersona
                 PersonaNegocio personaNegocio = new PersonaNegocio();
                 long resultado = personaNegocio.unicaP(Proveedor);
 
@@ -162,14 +110,18 @@ namespace LabSystem
                 {
                     Proveedor.setTipo(cbTipo.SelectedIndex);
 
+                    //Se insertan los datos del proveedor que corresponden a la tabla persona
+                    //osea se insertan datos en la tabla pesona
+                    //ya que la clase proveedor hereda atributos de la clase persona
+                    //y esto retorna el codigo de la persona de la base de datos
                     resultadoP = personaNegocio.Insertar(Proveedor);
 
-                    //para relacionar las tablas Proveedor y persona, le agrego a la tabla Proveedor
-                    //el codigo de persona llamando al metodo getCodPer de la capa de Proveedornegocios
+                    //para relacionar las tablas Proveedor y persona, le agrego clase Proveedor
+                    //el codigo de persona llamando al metodo setCodPersona heredado de Persona
                     Proveedor.setCodPersona(resultadoP);
 
-                    //personaNegocio.getCodPer(cliente)
-                    //envio el objeto Proveedor a la capa negocioProveedor
+                    //hago el insert en la tabla proveedor con los datos completos del proveedor,
+                    //incluyendo su codigo persona de esta manera relacionando las tablas proveedor y persona
                     ProveedorNegocio prn = new ProveedorNegocio();
                     resultadoPr = prn.Insertar(Proveedor);
 
@@ -225,7 +177,6 @@ namespace LabSystem
 
         public void SelecProveedor()//metodo para seleccionar un Proveedor de la tabla
         {
-            //LimpiarDatos();
             idProveedor = int.Parse(dvg.CurrentRow.Cells[0].Value.ToString());
             if (dvg.CurrentRow.Cells[1].Value.ToString().Equals("Persona")) { cbTipo.SelectedIndex = 0; } else { cbTipo.SelectedIndex = 1; }
             tbProveedorDNI.Text = dvg.CurrentRow.Cells[2].Value.ToString();
@@ -245,6 +196,7 @@ namespace LabSystem
 
         public void SelecTipoPro()//metodo para seleccionar el tipo de Proveedor
         {
+            desHabilitarRojo();
             habilitar();
             int seleccion = cbTipo.SelectedIndex;
             if (seleccion == 0)//segun el tipo de Proveedor se habilitan algunos campos, 0 es persona 1 es empresa
@@ -271,7 +223,7 @@ namespace LabSystem
 
         public void Actualizar()//metodo para actualizar cProveedor
         {
-            if (idProveedor != 0)
+            if (idProveedor != 0 && !camposVacios())
             {
                 long cuit = 0;
                 int dni = 0;
@@ -280,80 +232,35 @@ namespace LabSystem
 
                 if (cbTipo.SelectedIndex == 0)
                 {
-                    //agrego el contenido del tbDNI al atributo DNI del cliente
-                    if (!tbProveedorDNI.Text.Equals("") && tbProveedorDNI.Text.Length == 8)
-                    {
-                        dni = int.Parse(tbProveedorDNI.Text);
-                        Proveedor.setDni(dni);
-                    }
-                    else { MessageBox.Show("El campo DNI esta vacio, o el DNI no tiene 8 numeros"); }
-                }
-
-                if (cbTipo.SelectedIndex == 1)
-                {
-                    //agrego el contenido del tbCuit al atributo cuit del cliente
-                    if (!tbProveedorCuit.Text.Equals("") && tbProveedorCuit.Text.Length == 11)
+                    if (tbProveedorCuit.Enabled)
                     {
                         cuit = (long)Convert.ToDouble(tbProveedorCuit.Text);
                         Proveedor.setCuit(cuit);
                     }
-                    else { MessageBox.Show("El campo Cuit esta vacio, o el cuit no tiene 11 numeros"); }
-                }
-                //agrego el contenido del tbNombre al atributo nombre del cliente
-                if (!tbProveedorNom.Text.Equals("")) { Proveedor.setNombre(tbProveedorNom.Text); }
-                else
-                {
-                    MessageBox.Show("EL campo Nombre esta vacio");
-                }
-
-                //Si el tipo de cliente es persona, index=0 agrego el apellido
-                if (cbTipo.SelectedIndex == 0)
-                {
-                    //agrego el contenido del tbApe al atributo apellido del cliente
-                    if (!tbProveedorApe.Text.Equals("")) { Proveedor.setApellido(tbProveedorApe.Text); }
                     else
                     {
-                        MessageBox.Show("EL campo Apellido calle esta vacio");
+                        dni = int.Parse(tbProveedorDNI.Text);
+                        Proveedor.setDni(dni);
                     }
-                }
 
-                //agrego el contenido del tbCalle al atributo nombre calle del cliente
-                if (!tbProveedorCalle.Text.Equals("")) { Proveedor.setNombreCalle(tbProveedorCalle.Text); }
-                else
-                {
-                    MessageBox.Show("EL campo Calle esta vacio");
-                }
+                    //agrego el contenido del tbNombre al atributo nombre del Proveedor
+                    Proveedor.setNombre(tbProveedorNom.Text);
 
-                //agrego el contenido del tbNumCalle al atributo numero calle del cliente
-                if (!tbProveedorNumCalle.Text.Equals("") && !tbProveedorNumCalle.Text.Equals("0"))
-                {
+                    if (tbProveedorApe.Enabled) { Proveedor.setApellido(tbProveedorApe.Text); }
+
+                    //agrego el contenido del tbCalle al atributo nombre calle del Proveedor
+                    Proveedor.setNombreCalle(tbProveedorCalle.Text);
+
                     numCalle = int.Parse(tbProveedorNumCalle.Text);
                     Proveedor.setNumCalle(numCalle);
-                }
-                else { MessageBox.Show("EL campo Numero calle esta vacio"); }
 
-                if (cbTipo.Text.Equals("Persona"))
-                {
-                    //agrego el contenido del tbCondicionFiscal al atributo condicion fiscal del cliente
-                    if (!tbProveedorCondFisc.Text.Equals("")) { Proveedor.setCondicionFiscal(tbProveedorCondFisc.Text); }
-                    else { MessageBox.Show("EL campo Condicion fiscal esta vacio"); }
-                }
+                    if (tbProveedorCondFisc.Enabled) { Proveedor.setCondicionFiscal(tbProveedorCondFisc.Text); }
+                    else { Proveedor.SetRazonSocial(tbProveedorRazSoc.Text); }
 
-                if (cbTipo.Text.Equals("Empresa"))
-                {
-                    //agrego el contenido del tbRazonsoc al atributo razon social del cliente
-                    if (!tbProveedorRazSoc.Text.Equals("")) { Proveedor.SetRazonSocial(tbProveedorRazSoc.Text); }
-                    else { MessageBox.Show("EL campo Razon social esta vacio"); }
-                }
 
-                //agrego el contenido del tbDesc al atributo nombre calle del Proveedor
-                if (!tbProveedorDesc.Text.Equals("")) { Proveedor.SetDescripcion(tbProveedorDesc.Text); }
-                else
-                {
-                    MessageBox.Show("EL campo Descripcion esta vacio");
-                }
-                if (!tbProveedorNom.Text.Equals("") && !tbProveedorCalle.Text.Equals("") && !tbProveedorNumCalle.Text.Equals("") && !tbProveedorDesc.Text.Equals(""))
-                {
+                    //agrego el contenido del tbDesc al atributo descripcion del Proveedor
+                    Proveedor.SetDescripcion(tbProveedorDesc.Text);
+
                     //agrego el contenido del tbRazonsoc al atributo razon social del cliente
                     Proveedor.setTipo(cbTipo.SelectedIndex);
 
@@ -405,10 +312,21 @@ namespace LabSystem
             tbProveedorNumCalle.Enabled = false;
             tbProveedorCondFisc.Enabled = false;
             tbProveedorRazSoc.Enabled = false;
+            tbProveedorDesc.Enabled = false;
+            tbProveedorDNIp.BackColor = Color.Transparent;
+            tbProveedorCuitp.BackColor = Color.Transparent;
+            tbProveedorNomp.BackColor = Color.Transparent;
+            tbProveedorApep.BackColor = Color.Transparent;
+            tbProveedorCallep.BackColor = Color.Transparent;
+            tbProveedorNumCallep.BackColor = Color.Transparent;
+            tbProveedorCondFiscp.BackColor = Color.Transparent;
+            tbProveedorRazSocp.BackColor = Color.Transparent;
+            tbProveedorDescp.BackColor = Color.Transparent;
             btnAgregar.Enabled = false;
             btnActualizar.Enabled = false;
             btnBorrar.Enabled = false;
             btnVerProd.Enabled = false;
+            btnLimpiar.Enabled = false;
         }
 
         public void habilitar()//metodo para habilitar los campos
@@ -421,7 +339,22 @@ namespace LabSystem
             tbProveedorNumCalle.Enabled = true;
             tbProveedorCondFisc.Enabled = true;
             tbProveedorRazSoc.Enabled = true;
+            tbProveedorDesc.Enabled = true;
             btnAgregar.Enabled = true;
+            btnLimpiar.Enabled = true;
+        }
+
+        public void desHabilitarRojo()
+        {
+            tbProveedorDNIp.BackColor = Color.Transparent;
+            tbProveedorCuitp.BackColor = Color.Transparent;
+            tbProveedorNomp.BackColor = Color.Transparent;
+            tbProveedorApep.BackColor = Color.Transparent;
+            tbProveedorCallep.BackColor = Color.Transparent;
+            tbProveedorNumCallep.BackColor = Color.Transparent;
+            tbProveedorCondFiscp.BackColor = Color.Transparent;
+            tbProveedorRazSocp.BackColor = Color.Transparent;
+            tbProveedorDescp.BackColor = Color.Transparent;
         }
 
         public void LimpiarDatos()
@@ -440,6 +373,7 @@ namespace LabSystem
             cbTipo.SelectedIndex = -1;
             tbProveedorDesc.Text = "";
             btnVerProd.Enabled = false;
+            desHabilitar();
             CargarTodo();
         }
 
@@ -451,6 +385,97 @@ namespace LabSystem
             frmprod.CargarGrilla();
             this.Close();
             frmprod.Show();
+        }
+
+        private void tbProveedorDNI_Leave(object sender, EventArgs e)
+        {
+            TextBox textBoxActual = (TextBox)sender;
+            if (textBoxActual.Text.Equals(""))
+            {
+                MessageBox.Show("El campo " + textBoxActual.Tag + " se encuentra vacio");
+
+                foreach (Control ctrl in PanelControl.Controls)
+                {
+                    if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                }
+            }
+            else
+            {
+                if (textBoxActual.Name.Equals("tbProveedorDNI") && textBoxActual.Text.Length != 8)
+                {
+                    MessageBox.Show("El campo " + textBoxActual.Tag + " tiene que tener 8 numeros");
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                    }
+                }
+                else if (textBoxActual.Name.Equals("tbProveedorCuit") && textBoxActual.Text.Length != 11)
+                {
+                    MessageBox.Show("El campo " + textBoxActual.Tag + " tiene que tener 11 numeros");
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                    }
+                }
+                else if (textBoxActual.Name.Equals("tbProveedorNumCalle") && textBoxActual.Text.Equals("0"))
+                {
+                    MessageBox.Show("El campo " + textBoxActual.Tag + " no pede tener el valor 0");
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                    }
+                }
+                else
+                {
+                    foreach (Control ctrl in PanelControl.Controls)
+                    {
+                        if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Transparent; }
+                    }
+                }
+            }
+        }
+
+        public bool camposVacios()
+        {
+            bool vacio = false;
+
+            foreach (Control ctrl in PanelControl.Controls)
+            {
+                if (ctrl is Panel && ctrl.HasChildren)
+                {
+                    Point p = new Point(2, 2);
+                    if (ctrl.GetChildAtPoint(p).Text.Equals("") && ctrl.GetChildAtPoint(p).Enabled)
+                    {
+                        MessageBox.Show("El campo " + ctrl.GetChildAtPoint(p).Tag + " se encuentra vacio");
+                        foreach (Control ctrl2 in PanelControl.Controls)
+                        {
+                            if (ctrl2 is Panel && ctrl2.Name == ctrl.GetChildAtPoint(p).Name + "p") { ctrl2.BackColor = Color.Red; }
+                        }
+                        vacio = true;
+                    }
+                    else if (tbProveedorCuit.Enabled && tbProveedorCuit.Text.Length != 11 || tbProveedorDNI.Enabled && tbProveedorDNI.Text.Length != 8 || tbProveedorNumCalle.Text.Equals("0"))
+                    {
+                        vacio = true;
+                    }
+                }
+            }
+            return vacio;
+        }
+
+        private void tbProveedorDNI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbProveedorApe_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

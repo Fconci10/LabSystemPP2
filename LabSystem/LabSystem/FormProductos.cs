@@ -17,6 +17,7 @@ namespace LabSystem
         public FormProductos()
         {
             InitializeComponent();
+            desHabilitar();
             CargarGrilla();
         }
         public int codProv = 0;
@@ -59,26 +60,24 @@ namespace LabSystem
             int dia = dateTimePicker1.Value.Day;
             int mes = dateTimePicker1.Value.Month;
             int anio = dateTimePicker1.Value.Year;
-            if (!tbCodigo.Text.Equals("") &&
-                !tbNombre.Text.Equals("") &&
-                !tbDesc.Text.Equals("") &&
-                !tbPreCom.Text.Equals("") &&
-                !tbPrecVenta.Text.Equals("") &&
-                !tbCantidad.Text.Equals("") &&
-                cbTipo.SelectedIndex != -1)
+            if (!camposVacios())
             {
                 ProductoNegocio prdN = new ProductoNegocio();
                 if (prdN.Unico(int.Parse(tbCodigo.Text)) == 1)
                 {
                     Producto producto = new Producto();
+                    decimal decimalCompra = 0;
+                    decimalCompra = System.Convert.ToDecimal(tbPreCom.Text);
+                    decimal decimalVenta = 0;
+                    decimalVenta = System.Convert.ToDecimal(tbPrecVenta.Text);
                     producto.SetCodProducto(int.Parse(tbCodigo.Text));
                     producto.SetNombre(tbNombre.Text);
                     producto.SetDia(dia);
                     producto.SetMes(mes);
                     producto.SetAnio(anio);
                     producto.SetDescripcion(tbDesc.Text);
-                    producto.SetPrecioCompra(Decimal.Parse(tbPreCom.Text));
-                    producto.SetPrecioVenta(Decimal.Parse(tbPrecVenta.Text));
+                    producto.SetPrecioCompra(decimalCompra);
+                    producto.SetPrecioVenta(decimalVenta);
                     producto.SetCantidad(int.Parse(tbCantidad.Text));
                     producto.SetTipo(cbTipo.SelectedIndex);
 
@@ -142,6 +141,9 @@ namespace LabSystem
             tbPrecVenta.Text = dgv.CurrentRow.Cells[5].Value.ToString();
             tbPreCom.Text = dgv.CurrentRow.Cells[6].Value.ToString();
             tbCantidad.Text = dgv.CurrentRow.Cells[7].Value.ToString();
+
+            btnActualizar.Enabled = true;
+            btnBorrar.Enabled = true;
         }
 
         public void Actualizar()
@@ -155,18 +157,12 @@ namespace LabSystem
                     GuardarProducto();
                 }
             }
-            else
+            else if(!camposVacios())
             {
                 int dia = dateTimePicker1.Value.Day;
                 int mes = dateTimePicker1.Value.Month;
                 int anio = dateTimePicker1.Value.Year;
-                if (!tbCodigo.Text.Equals("") &&
-                    !tbNombre.Text.Equals("") &&
-                    !tbDesc.Text.Equals("") &&
-                    !tbPreCom.Text.Equals("") &&
-                    !tbPrecVenta.Text.Equals("") &&
-                    !tbCantidad.Text.Equals("") &&
-                    cbTipo.SelectedIndex != -1)
+                if (!camposVacios())
                 {
                     Producto producto = new Producto();
                     producto.SetCodProducto(int.Parse(dgv.CurrentRow.Cells[0].Value.ToString()));
@@ -184,8 +180,8 @@ namespace LabSystem
                     prdn.Update(producto);
                     Limpiar();
                 }
-                else { MessageBox.Show("Hay campos vacios"); }
                 CargarGrilla();
+                desHabilitar();
             }
         }
 
@@ -204,11 +200,41 @@ namespace LabSystem
                         MessageBox.Show("Se ah borrado el producto");
                         CargarGrilla();
                         Limpiar();
+                        desHabilitar();
                     }
                     else { MessageBox.Show("Error al borrar el producto"); }
                 }
             }
             else { MessageBox.Show("Agregue el codigo del producto a borrar"); }
+
+        }
+
+        public void desHabilitar()
+        {
+            tbCodigo.Enabled = false;
+            tbNombre.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            tbDesc.Enabled = false;
+            tbPrecVenta.Enabled = false;
+            tbPreCom.Enabled = false;
+            tbCantidad.Enabled = false;
+            btnAgregar.Enabled = false;
+            btnActualizar.Enabled = false;
+            btnBorrar.Enabled = false;
+            btnLimp.Enabled = false;
+        }
+
+        public void habilitar()
+        {
+            tbCodigo.Enabled = true;
+            tbNombre.Enabled = true;
+            dateTimePicker1.Enabled = true;
+            tbDesc.Enabled = true;
+            tbPrecVenta.Enabled = true;
+            tbPreCom.Enabled = true;
+            tbCantidad.Enabled = true;
+            btnAgregar.Enabled = true;
+            btnLimp.Enabled = true;
         }
 
         public void Limpiar()
@@ -220,6 +246,73 @@ namespace LabSystem
             tbPrecVenta.Text = "";
             tbCantidad.Text = "";
             cbTipo.SelectedIndex = -1;
+            desHabilitar();
+        }
+
+        private void cbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            habilitar();
+        }
+
+        private void tbCodigo_Leave(object sender, EventArgs e)
+        {
+            TextBox textBoxActual = (TextBox)sender;
+            if (textBoxActual.Text.Equals(""))
+            {
+                MessageBox.Show("El campo " + textBoxActual.Tag + " se encuentra vacio");
+
+                foreach (Control ctrl in PanelControl.Controls)
+                {
+                    if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Red; }
+                }
+            }
+            else
+            {
+                foreach (Control ctrl in PanelControl.Controls)
+                {
+                    if (ctrl is Panel && ctrl.Name == textBoxActual.Name + "p") { ctrl.BackColor = Color.Transparent; }
+                }
+            }
+        }
+
+        public bool camposVacios()
+        {
+            bool vacio = false;
+
+            foreach (Control ctrl in PanelControl.Controls)
+            {
+                if (ctrl is Panel && ctrl.HasChildren)
+                {
+                    Point p = new Point(3, 3);
+                    if (ctrl.GetChildAtPoint(p).Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo " + ctrl.GetChildAtPoint(p).Tag + " se encuentra vacio");
+                        foreach (Control ctrl2 in PanelControl.Controls)
+                        {
+                            if (ctrl2 is Panel && ctrl2.Name == ctrl.GetChildAtPoint(p).Name + "p") { ctrl2.BackColor = Color.Red; }
+                        }
+                        vacio = true;
+                    }
+
+                }
+            }
+            return vacio;
+        }
+
+        private void tbCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPrecVenta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

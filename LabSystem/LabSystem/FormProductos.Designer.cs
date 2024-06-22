@@ -61,7 +61,22 @@
             tbCantidad = new TextBox();
             label10 = new Label();
             btnLimp = new Button();
+            tbCodigop = new Panel();
+            tbNombrep = new Panel();
+            tbPrecVentap = new Panel();
+            tbDescp = new Panel();
+            tbPreComp = new Panel();
+            tbCantidadp = new Panel();
+            PanelControl = new Panel();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgv).BeginInit();
+            tbCodigop.SuspendLayout();
+            tbNombrep.SuspendLayout();
+            tbPrecVentap.SuspendLayout();
+            tbDescp.SuspendLayout();
+            tbPreComp.SuspendLayout();
+            tbCantidadp.SuspendLayout();
+            PanelControl.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -85,7 +100,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(57, 56);
+            label2.Location = new Point(59, 51);
             label2.Name = "label2";
             label2.Size = new Size(117, 15);
             label2.TabIndex = 2;
@@ -93,22 +108,27 @@
             // 
             // tbCodigo
             // 
-            tbCodigo.Location = new Point(180, 53);
+            tbCodigo.Location = new Point(3, 3);
             tbCodigo.Name = "tbCodigo";
             tbCodigo.Size = new Size(100, 23);
             tbCodigo.TabIndex = 3;
+            tbCodigo.Tag = "Codigo producto";
+            tbCodigo.KeyPress += tbCodigo_KeyPress;
+            tbCodigo.Leave += tbCodigo_Leave;
             // 
             // tbNombre
             // 
-            tbNombre.Location = new Point(180, 82);
+            tbNombre.Location = new Point(3, 3);
             tbNombre.Name = "tbNombre";
             tbNombre.Size = new Size(100, 23);
             tbNombre.TabIndex = 5;
+            tbNombre.Tag = "Nombre del producto";
+            tbNombre.Leave += tbCodigo_Leave;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(57, 85);
+            label3.Location = new Point(55, 83);
             label3.Name = "label3";
             label3.Size = new Size(122, 15);
             label3.TabIndex = 4;
@@ -125,16 +145,18 @@
             // 
             // tbDesc
             // 
-            tbDesc.Location = new Point(180, 140);
+            tbDesc.Location = new Point(3, 3);
             tbDesc.Multiline = true;
             tbDesc.Name = "tbDesc";
             tbDesc.Size = new Size(300, 47);
             tbDesc.TabIndex = 9;
+            tbDesc.Tag = "Descripción del producto";
+            tbDesc.Leave += tbCodigo_Leave;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(39, 144);
+            label5.Location = new Point(37, 158);
             label5.Name = "label5";
             label5.Size = new Size(140, 15);
             label5.TabIndex = 8;
@@ -142,15 +164,18 @@
             // 
             // tbPrecVenta
             // 
-            tbPrecVenta.Location = new Point(180, 193);
+            tbPrecVenta.Location = new Point(3, 3);
             tbPrecVenta.Name = "tbPrecVenta";
             tbPrecVenta.Size = new Size(100, 23);
             tbPrecVenta.TabIndex = 11;
+            tbPrecVenta.Tag = "Precio de venta";
+            tbPrecVenta.KeyPress += tbPrecVenta_KeyPress;
+            tbPrecVenta.Leave += tbCodigo_Leave;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(86, 196);
+            label6.Location = new Point(85, 202);
             label6.Name = "label6";
             label6.Size = new Size(88, 15);
             label6.TabIndex = 10;
@@ -160,7 +185,7 @@
             // 
             dateTimePicker1.CustomFormat = "";
             dateTimePicker1.ImeMode = ImeMode.Alpha;
-            dateTimePicker1.Location = new Point(180, 111);
+            dateTimePicker1.Location = new Point(13, 68);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(222, 23);
             dateTimePicker1.TabIndex = 17;
@@ -228,15 +253,18 @@
             // 
             // tbPreCom
             // 
-            tbPreCom.Location = new Point(180, 222);
+            tbPreCom.Location = new Point(3, 3);
             tbPreCom.Name = "tbPreCom";
             tbPreCom.Size = new Size(100, 23);
             tbPreCom.TabIndex = 21;
+            tbPreCom.Tag = "Precio de compra";
+            tbPreCom.KeyPress += tbPrecVenta_KeyPress;
+            tbPreCom.Leave += tbCodigo_Leave;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(72, 225);
+            label8.Location = new Point(71, 234);
             label8.Name = "label8";
             label8.Size = new Size(102, 15);
             label8.TabIndex = 20;
@@ -254,7 +282,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(296, 253);
+            btnAgregar.Location = new Point(296, 266);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 23);
             btnAgregar.TabIndex = 23;
@@ -264,7 +292,7 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(393, 252);
+            btnActualizar.Location = new Point(393, 265);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(75, 23);
             btnActualizar.TabIndex = 24;
@@ -274,7 +302,7 @@
             // 
             // btnBorrar
             // 
-            btnBorrar.Location = new Point(493, 252);
+            btnBorrar.Location = new Point(493, 265);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(75, 23);
             btnBorrar.TabIndex = 25;
@@ -284,12 +312,14 @@
             // 
             // cbTipo
             // 
+            cbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
             cbTipo.FormattingEnabled = true;
             cbTipo.Items.AddRange(new object[] { "Insumo", "Equipamiento" });
             cbTipo.Location = new Point(359, 53);
             cbTipo.Name = "cbTipo";
             cbTipo.Size = new Size(121, 23);
             cbTipo.TabIndex = 26;
+            cbTipo.SelectedIndexChanged += cbTipo_SelectedIndexChanged;
             // 
             // label9
             // 
@@ -302,15 +332,18 @@
             // 
             // tbCantidad
             // 
-            tbCantidad.Location = new Point(180, 251);
+            tbCantidad.Location = new Point(3, 3);
             tbCantidad.Name = "tbCantidad";
             tbCantidad.Size = new Size(100, 23);
             tbCantidad.TabIndex = 29;
+            tbCantidad.Tag = "Cantidad";
+            tbCantidad.KeyPress += tbCodigo_KeyPress;
+            tbCantidad.Leave += tbCodigo_Leave;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(119, 254);
+            label10.Location = new Point(118, 266);
             label10.Name = "label10";
             label10.Size = new Size(55, 15);
             label10.TabIndex = 28;
@@ -318,7 +351,7 @@
             // 
             // btnLimp
             // 
-            btnLimp.Location = new Point(296, 302);
+            btnLimp.Location = new Point(296, 308);
             btnLimp.Name = "btnLimp";
             btnLimp.Size = new Size(106, 23);
             btnLimp.TabIndex = 30;
@@ -326,13 +359,75 @@
             btnLimp.UseVisualStyleBackColor = true;
             btnLimp.Click += btnLimp_Click;
             // 
+            // tbCodigop
+            // 
+            tbCodigop.Controls.Add(tbCodigo);
+            tbCodigop.Location = new Point(13, 4);
+            tbCodigop.Name = "tbCodigop";
+            tbCodigop.Size = new Size(106, 29);
+            tbCodigop.TabIndex = 31;
+            // 
+            // tbNombrep
+            // 
+            tbNombrep.Controls.Add(tbNombre);
+            tbNombrep.Location = new Point(13, 36);
+            tbNombrep.Name = "tbNombrep";
+            tbNombrep.Size = new Size(106, 29);
+            tbNombrep.TabIndex = 32;
+            // 
+            // tbPrecVentap
+            // 
+            tbPrecVentap.Controls.Add(tbPrecVenta);
+            tbPrecVentap.Location = new Point(12, 153);
+            tbPrecVentap.Name = "tbPrecVentap";
+            tbPrecVentap.Size = new Size(106, 29);
+            tbPrecVentap.TabIndex = 32;
+            // 
+            // tbDescp
+            // 
+            tbDescp.Controls.Add(tbDesc);
+            tbDescp.Location = new Point(13, 97);
+            tbDescp.Name = "tbDescp";
+            tbDescp.Size = new Size(306, 53);
+            tbDescp.TabIndex = 32;
+            // 
+            // tbPreComp
+            // 
+            tbPreComp.Controls.Add(tbPreCom);
+            tbPreComp.Location = new Point(12, 185);
+            tbPreComp.Name = "tbPreComp";
+            tbPreComp.Size = new Size(106, 29);
+            tbPreComp.TabIndex = 32;
+            // 
+            // tbCantidadp
+            // 
+            tbCantidadp.Controls.Add(tbCantidad);
+            tbCantidadp.Location = new Point(12, 217);
+            tbCantidadp.Name = "tbCantidadp";
+            tbCantidadp.Size = new Size(106, 29);
+            tbCantidadp.TabIndex = 32;
+            // 
+            // PanelControl
+            // 
+            PanelControl.Controls.Add(tbCodigop);
+            PanelControl.Controls.Add(tbCantidadp);
+            PanelControl.Controls.Add(dateTimePicker1);
+            PanelControl.Controls.Add(tbPreComp);
+            PanelControl.Controls.Add(tbNombrep);
+            PanelControl.Controls.Add(tbDescp);
+            PanelControl.Controls.Add(tbPrecVentap);
+            PanelControl.Location = new Point(169, 41);
+            PanelControl.Name = "PanelControl";
+            PanelControl.Size = new Size(331, 248);
+            PanelControl.TabIndex = 33;
+            // 
             // FormProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(965, 554);
+            Controls.Add(button2);
             Controls.Add(btnLimp);
-            Controls.Add(tbCantidad);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(cbTipo);
@@ -340,25 +435,33 @@
             Controls.Add(btnActualizar);
             Controls.Add(btnAgregar);
             Controls.Add(button1);
-            Controls.Add(tbPreCom);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(dgv);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(tbPrecVenta);
             Controls.Add(label6);
-            Controls.Add(tbDesc);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(tbNombre);
             Controls.Add(label3);
-            Controls.Add(tbCodigo);
             Controls.Add(label2);
             Controls.Add(lblNomProv);
             Controls.Add(label1);
+            Controls.Add(PanelControl);
             Name = "FormProductos";
             Text = "FormProductos";
             ((System.ComponentModel.ISupportInitialize)dgv).EndInit();
+            tbCodigop.ResumeLayout(false);
+            tbCodigop.PerformLayout();
+            tbNombrep.ResumeLayout(false);
+            tbNombrep.PerformLayout();
+            tbPrecVentap.ResumeLayout(false);
+            tbPrecVentap.PerformLayout();
+            tbDescp.ResumeLayout(false);
+            tbDescp.PerformLayout();
+            tbPreComp.ResumeLayout(false);
+            tbPreComp.PerformLayout();
+            tbCantidadp.ResumeLayout(false);
+            tbCantidadp.PerformLayout();
+            PanelControl.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -398,5 +501,13 @@
         private Label label10;
         private DataGridViewTextBoxColumn Column8;
         private Button btnLimp;
+        private Panel tbCodigop;
+        private Panel tbNombrep;
+        private Panel tbPrecVentap;
+        private Panel tbDescp;
+        private Panel tbPreComp;
+        private Panel tbCantidadp;
+        private Panel PanelControl;
+        private Button button2;
     }
 }
