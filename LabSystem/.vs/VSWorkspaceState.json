@@ -1,17 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CaapaEntidades",
-    "\\CaapaEntidades\\bin",
-    "\\CapaNegocios",
-    "\\CapaNegocios\\bin",
-    "\\CapaNegocios\\bin\\Debug",
-    "\\CapaNegocios\\bin\\Release",
-    "\\CapaNegocios\\obj",
-    "\\LabSystem",
-    "\\LabSystem\\Properties",
-    "\\LabSystem\\Properties\\DataSources"
+    "\\LabSystem"
   ],
-  "SelectedNode": "\\LabSystem\\App.config",
+  "SelectedNode": "\\LabSystem\\LabSystem.sln",
   "PreviewInSolutionExplorer": false
 }

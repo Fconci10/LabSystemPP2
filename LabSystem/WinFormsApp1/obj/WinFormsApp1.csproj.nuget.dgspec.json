@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PP2\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\franc\\OneDrive\\Escritorio\\pp2\\LabSystemPP2-main\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\PP2\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\franc\\OneDrive\\Escritorio\\pp2\\LabSystemPP2-main\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PP2\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\franc\\OneDrive\\Escritorio\\pp2\\LabSystemPP2-main\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\PP2\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\PP2\\LabSystem\\WinFormsApp1\\obj\\",
+        "projectPath": "C:\\Users\\franc\\OneDrive\\Escritorio\\pp2\\LabSystemPP2-main\\LabSystem\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\franc\\OneDrive\\Escritorio\\pp2\\LabSystemPP2-main\\LabSystem\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

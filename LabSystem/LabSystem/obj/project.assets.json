@@ -626,19 +626,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emanu\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c# aplicaciones\\LabSystem\\LabSystem\\LabSystem.csproj",
+      "projectUniqueName": "C:\\PP2\\LabSystem\\LabSystem\\LabSystem.csproj",
       "projectName": "LabSystem",
-      "projectPath": "D:\\c# aplicaciones\\LabSystem\\LabSystem\\LabSystem.csproj",
-      "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
-      "outputPath": "D:\\c# aplicaciones\\LabSystem\\LabSystem\\obj\\",
+      "projectPath": "C:\\PP2\\LabSystem\\LabSystem\\LabSystem.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\PP2\\LabSystem\\LabSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -652,11 +652,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\c# aplicaciones\\LabSystem\\CaapaEntidades\\CapaEntidades.csproj": {
-              "projectPath": "D:\\c# aplicaciones\\LabSystem\\CaapaEntidades\\CapaEntidades.csproj"
+            "C:\\PP2\\LabSystem\\CaapaEntidades\\CapaEntidades.csproj": {
+              "projectPath": "C:\\PP2\\LabSystem\\CaapaEntidades\\CapaEntidades.csproj"
             },
-            "D:\\c# aplicaciones\\LabSystem\\CapaNegocios\\CapaNegocios.csproj": {
-              "projectPath": "D:\\c# aplicaciones\\LabSystem\\CapaNegocios\\CapaNegocios.csproj"
+            "C:\\PP2\\LabSystem\\CapaNegocios\\CapaNegocios.csproj": {
+              "projectPath": "C:\\PP2\\LabSystem\\CapaNegocios\\CapaNegocios.csproj"
             }
           }
         }
@@ -681,24 +681,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -707,7 +689,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
