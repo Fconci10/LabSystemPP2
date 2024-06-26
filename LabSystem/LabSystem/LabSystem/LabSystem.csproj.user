@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\c# aplicaciones\LabSystem\LabSystem\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LabSystem"
+    "\\LabSystem",
+    "\\LabSystem\\LabSystem"
   ],
-  "SelectedNode": "\\LabSystem\\LabSystem.sln",
+  "SelectedNode": "\\LabSystem\\LabSystem\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

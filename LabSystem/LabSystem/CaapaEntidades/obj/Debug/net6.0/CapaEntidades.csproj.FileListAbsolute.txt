@@ -1,0 +1,66 @@
+D:\c# aplicaciones\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.deps.json
+D:\c# aplicaciones\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.dll
+D:\c# aplicaciones\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfoInputs.cache
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfo.cs
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.csproj.CoreCompileInputs.cache
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.dll
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\refint\CapaEntidades.dll
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystem\CaapaEntidades\obj\Debug\net6.0\ref\CapaEntidades.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.deps.json
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfoInputs.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfo.cs
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\refint\CapaEntidades.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\ref\CapaEntidades.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.deps.json
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfoInputs.cache
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfo.cs
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.csproj.CoreCompileInputs.cache
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\refint\CapaEntidades.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\ref\CapaEntidades.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.deps.json
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfoInputs.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfo.cs
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.csproj.CoreCompileInputs.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\refint\CapaEntidades.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\ref\CapaEntidades.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.deps.json
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfoInputs.cache
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfo.cs
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\refint\CapaEntidades.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\CaapaEntidades\obj\Debug\net6.0\ref\CapaEntidades.dll
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.deps.json
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.dll
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\bin\Debug\net6.0\CapaEntidades.pdb
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfoInputs.cache
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.AssemblyInfo.cs
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.dll
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\refint\CapaEntidades.dll
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\CapaEntidades.pdb
+C:\PP2\LabSystem\LabSystem\CaapaEntidades\obj\Debug\net6.0\ref\CapaEntidades.dll

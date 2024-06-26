@@ -1,0 +1,233 @@
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.AssemblyReference.cache
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form1.resources
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.GenerateResource.cache
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfoInputs.cache
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfo.cs
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CoreCompileInputs.cache
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.exe
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll.config
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.deps.json
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.runtimeconfig.json
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.pdb
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.dll
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.pdb
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CopyComplete
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.dll
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\refint\LabSystem.dll
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.pdb
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.genruntimeconfig.cache
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\ref\LabSystem.dll
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProveedores.resources
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Main.resources
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProductos.resources
+D:\c# aplicaciones\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormVenta.resources
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.exe
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll.config
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.deps.json
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.runtimeconfig.json
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.AssemblyReference.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form1.resources
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProductos.resources
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProveedores.resources
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormVenta.resources
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Main.resources
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.GenerateResource.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfoInputs.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfo.cs
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CoreCompileInputs.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CopyComplete
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\refint\LabSystem.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.genruntimeconfig.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\ref\LabSystem.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.exe
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll.config
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.deps.json
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.runtimeconfig.json
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.AssemblyReference.cache
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form1.resources
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProductos.resources
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProveedores.resources
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormVenta.resources
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Main.resources
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.GenerateResource.cache
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfoInputs.cache
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfo.cs
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CoreCompileInputs.cache
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CopyComplete
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\refint\LabSystem.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.genruntimeconfig.cache
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\ref\LabSystem.dll
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Properties.Resources.resources
+D:\pp2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form2.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.exe
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll.config
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.deps.json
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.runtimeconfig.json
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.AssemblyReference.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form1.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form2.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProductos.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProveedores.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormVenta.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Main.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Properties.Resources.resources
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.GenerateResource.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfoInputs.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfo.cs
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CoreCompileInputs.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CopyComplete
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\refint\LabSystem.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.genruntimeconfig.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\ref\LabSystem.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormEmpleado.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.exe
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll.config
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.deps.json
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.runtimeconfig.json
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.AssemblyReference.cache
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form1.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form2.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormEmpleado.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProductos.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProveedores.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormVenta.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Main.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Properties.Resources.resources
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.GenerateResource.cache
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfoInputs.cache
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfo.cs
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CoreCompileInputs.cache
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CopyComplete
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\refint\LabSystem.dll
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.genruntimeconfig.cache
+C:\PP2\LabSystemPP2-main\LabSystem\LabSystem\obj\Debug\net6.0-windows\ref\LabSystem.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.exe
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll.config
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.deps.json
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.runtimeconfig.json
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\LabSystem.pdb
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaEntidades.pdb
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaNegocios.pdb
+C:\PP2\LabSystem\LabSystem\LabSystem\bin\Debug\net6.0-windows\CapaDatos.pdb
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.AssemblyReference.cache
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form1.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Form2.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormEmpleado.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProductos.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormProveedores.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.FormVenta.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Main.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.Properties.Resources.resources
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.GenerateResource.cache
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfoInputs.cache
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.AssemblyInfo.cs
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CoreCompileInputs.cache
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.csproj.CopyComplete
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\refint\LabSystem.dll
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.pdb
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\LabSystem.genruntimeconfig.cache
+C:\PP2\LabSystem\LabSystem\LabSystem\obj\Debug\net6.0-windows\ref\LabSystem.dll

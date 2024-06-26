@@ -1,0 +1,102 @@
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.deps.json
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfo.cs
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\refint\CapaNegocios.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.deps.json
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfo.cs
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\refint\CapaNegocios.dll
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.pdb
+C:\Users\franc\OneDrive\Escritorio\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.deps.json
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfo.cs
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\refint\CapaNegocios.dll
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.pdb
+D:\pp2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.deps.json
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfo.cs
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\refint\CapaNegocios.dll
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystemVer4\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.deps.json
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfo.cs
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\refint\CapaNegocios.dll
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.pdb
+C:\PP2\LabSystemPP2-main\LabSystem\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll
+C:\PP2\LabSystem\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.deps.json
+C:\PP2\LabSystem\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.dll
+C:\PP2\LabSystem\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaNegocios.pdb
+C:\PP2\LabSystem\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.dll
+C:\PP2\LabSystem\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.dll
+C:\PP2\LabSystem\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaEntidades.pdb
+C:\PP2\LabSystem\LabSystem\CapaNegocios\bin\Debug\net6.0\CapaDatos.pdb
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfo.cs
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.dll
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\refint\CapaNegocios.dll
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\CapaNegocios.pdb
+C:\PP2\LabSystem\LabSystem\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll
