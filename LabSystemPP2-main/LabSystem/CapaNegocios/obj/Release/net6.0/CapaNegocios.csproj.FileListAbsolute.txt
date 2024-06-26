@@ -1,0 +1,17 @@
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Release\net6.0\CapaNegocios.deps.json
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Release\net6.0\CapaNegocios.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Release\net6.0\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Release\net6.0\CapaDatos.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Release\net6.0\CapaEntidades.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Release\net6.0\CapaEntidades.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\bin\Release\net6.0\CapaDatos.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.AssemblyInfo.cs
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.csproj.CopyComplete
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\refint\CapaNegocios.dll
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\CapaNegocios.pdb
+D:\c# aplicaciones\LabSystem\CapaNegocios\obj\Release\net6.0\ref\CapaNegocios.dll
